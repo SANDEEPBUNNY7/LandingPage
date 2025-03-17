@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <h1><span class="s">S</span>ANDEEP</h1>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="role">
+            <p>Frontend Developer</p>
+            <p class="greet">Hi, I'm <span class="name">Sandeep</span> from India.</p>
+        </div>
+    </header>
+    <!-- ------------------------------------about-------------------------------------- -->
+    <div id="about">
+        <img src="images/pixelcut-export.jpg" alt="Not found">
+        <div class="aboutme">
+            <h1>About <span>me</span></h1>
+            <p>I have [X years] of experience in front-end development, where I've worked extensively with HTML, CSS, JavaScript, and frameworks like React. I've built responsive, mobile-friendly applications and collaborated closely with designers to deliver user-centric interfaces</p>
+            <div class="titles">
+                <p class="links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="links" onclick="opentab('experience')">Experience</p>
+                <p class="links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="contents active-tab" id="skills">
+                <ul>
+                    <li><span>Frontend Developer</span> <br> Creates the visual elements of a website or application.</li>
+                    <li><span>Python Developer</span><br> Uses the Python programming language to design, code, and maintain applications and systems</li>
+                </ul>
+            </div>
+            <div class="contents" id="experience">
+                <ul>
+                    <li><span>Mentor</span><br>Assisted trainer and helped students through their 
+                        doubts and teaching them optimal approaches at INTERNSHALA</li>
+                    <li><span>Intern(Python Developer)</span><br>Assisting in designing, implementing, and testing Python applications and services at OASIS INFOBYTE   </li>
+                </ul>
+            </div>
+            <div class="contents" id="education">
+                <ul>
+                    <li><span>2021 - 2025</span><br>B. TECH (CSE-AI&ML) at Sri Chaitanya Institute of Technology and Research , Khammam</li>
+                    <li><span>2019 - 2021</span><br>INTERMEDIATE (MPC) from Krishnaveni Junior College , Khammam </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------services---------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1><span>S</span>ervices</h1>
+            <div class="service-cards">
+                <div>
+                    <h2><span>Frontend</span> Development</h2>
+                    <p>The process of creating and maintaining your website's client-side architecture and create the user interface (UI) and user experience (UX) for websites</p>
+                </div>
+                <div>
+                    <h2><span>Software</span> Development</h2>
+                    <p>Professional programming services using the Python language, emcompassing the design, development, and maintenance of custom software applications.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------Portfolio------------------------------------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1><span>P</span>ortfolio</h1>
+            <div class="projects">
+                <div>
+                    <img src="images/3d-render-thermometer-show-hot-cold-temperature.jpg" class="unitConvert" height="230px">
+                    <div class="description active">
+                        <h3>Temperature Converter</h3>
+                        <p>A temperature converter is a tool that allows you to easily transform temperature values from one scale (like Celsius or Fahrenheit) to another</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/7520060.jpg" class="landingPage" alt="">
+                    <div class="description active">
+                        <h3>Landing Page</h3>
+                        <p>A responsive landing page is designed to adjust its layout and content to fit different devices, including desktop, mobile, tablet, and laptop, with varying screen sizes and browsers.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/demographic-census-concept-representation.jpg">
+                    <div class="description active">
+                        <h3>RoadSense</h3>
+                        <p>RoadSense designed to test an autonomous vehicle's ability to detect road events, defined as triplets composed by an active agent, the action(s) it performs and the corresponding scene locations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <div id="contact">
+        
+     </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/pixelcut-export.png);
+    background-size: 60%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding: 1em 10%;
+    position: sticky;
+}
+nav {
+    /* padding: 2em 10%;  */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: grey; */
+}
+nav h1 {
+    font-size: 35px;
+}
+nav h1 .s {
+    color: red;
+    font-size: 50px;
+    /* opacity: .8; */
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 3rem;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after {
+    content: " ";
+    background-color: red;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+.role {
+    margin-top: 20%;
+    font-size: 25px;
+}
+.role .greet {
+    font-size: 50px;
+    font-weight: bold;
+}
+.role .greet .name {
+    color: red;
+    /* opacity: .8; */
+}
+/* --------------------------About Me-------------------------------- */
+#about {
+    padding: 10%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 3em;
+}
+#about img {
+    border-radius: 20px;
+    width: 40%;
+}
+#about .aboutme {
+    /* padding: 0 2em; */
+    line-height: 1.5;
+    letter-spacing: 1.1;
+}
+#about .aboutme h1 {
+    font-size: 40px;
+}
+#about .aboutme h1 span {
+    color: red;
+}
+/* #about .aboutme p {
+    opacity: .9;
+} */
+#about ul li {
+    display: inline-block;
+    margin: 1em 3em 0 0;
+}
+.contents ul li span {
+    color: red;
+}
+.titles {
+    display: flex;
+    gap: 1.5em;
+    margin-top: 1em;
+}
+.titles .links {
+    position: relative;
+    cursor: pointer;
+}
+.titles .links::after {
+    content: " ";
+    background-color: red;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s;
+}
+.titles .links.active-link::after {
+    width: 50%;
+}
+.contents {
+    display: none
+}
+.contents.active-tab {
+    display: block;
+}
+/* -----------------------services--------------------------- */
+#services {
+    padding: 5% 10%;
+}
+.container h1 {
+    font-size: 50px;
+    text-align: center;
+}
+.container h1 span {
+    color: red;
+}
+.container .service-cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3em;
+}
+.service-cards div {
+    padding: 4em;
+    width: 400px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    position: relative;
+    transition: background-color 0.5s, transform 0.5s;
+}
+.service-cards div h2 {
+    font-size: 30px;
+    margin-bottom: .5em;
+}
+.service-cards div h2 span {
+    color: red;
+}
+.service-cards div p {
+    font-size: 14px;
+    color: lightgrey;
+}
+.service-cards div:hover {
+    background-color: rgb(124, 28, 28);
+    transform: translateY(-10px);
+}
+/* -----------------------Portfolio----------------------------- */
+#portfolio {
+    padding: 5% 10%;
+}
+.container .projects{ 
+    display: flex;
+    margin-top: 3em;
+    justify-content: space-between;
+    /* gap: 5em; */
+
+}
+.projects div {
+    /* flex: 1; */
+    position: relative;
+    /* border: 2px solid pink; */
+    width: 350px;
+    height: auto;
+}
+.projects div img {
+    border-radius: 20px;
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 100%;
+    /* transition: 0.5;
+    overflow: hidden; */
+
+}
+/* .projects div img:hover {
+    transform: scale(1.1);
+} */
+.projects div .description{
+    font-size: 13px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    display: none; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid red; */
+    background: rgba(227, 17, 17, 0.6);
+    border-radius: 20px;
+    /* display: block; */
+    transition-duration: 0.5s;
+}
+.projects div:hover .description {
+    display: flex;
+}
+.description > * {
+    width: 50%;
+    text-align: center;
+    
+}
+.projects div .description h3 {
+    /* font-size: 16px;  */
+    margin-bottom: .7em;
+}
+
+
