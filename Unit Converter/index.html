@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Temperature converter</h1>
+    <div class="container">
+            <div class="input">
+                <div class="deg">
+                    <label for="degrees">Degrees</label
+                    <input type="number" name="" id="degrees">
+                </div>
+                <div class="type">
+                    <label for="type">Type</label>
+                    <select name="" id="result">
+                        <option disabled selected value="">Select</option>
+                        <option value="">Fahrenheit</option>
+                        <option value="">Celsius</option>
+                        <option value="">Kelvin</option>
+                    </select>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+            <div class="result">
+                <p>Result</p>
+                <span class="output"></span>
+            </div>
+            <button onclick="convertUnits()">Convert</button>
+            <button style="background-color: rgb(98, 154, 14);" onclick="reset()">Reset</button>
+        </div>
+    <script src="index.js"></script>
+</body>
+</html>

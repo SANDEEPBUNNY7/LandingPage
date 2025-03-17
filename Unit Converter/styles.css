@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(173, 167, 167);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+    gap: 1.5em;
+}
+.container {
+    background-color: white;
+    border-radius: 20px;
+    padding: 2em 3em;
+}
+h1 {
+    color: white;
+    font-size: 2.7em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+label,p {
+    font-size: 20px;
+}
+.input {
+    display: flex;
+    gap: 1em;
+}
+.deg,.type,.result{
+    display: flex;
+    flex-direction: column;
+    margin-block: 1.5em;
+    color: grey;
+    opacity: .7 ;
+}
+.deg {
+    /* float: left; */
+    width: 180px;
+}
+.type {
+    /* float: right; */
+    width: 180px;
+}
+input {
+    outline: none;
+    /* border: none; */
+    font-size: 1.6rem;
+    margin-top: 20px;
+    padding-block: .2em ;
+    border: .2px solid grey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.type {
+    position: relative;
+}
+select {
+    margin-top: 20px;
+    outline: none;
+    font-size: 1.6rem;
+    padding: .22em .2em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    appearance: none;
+}
+.arrow {
+    width: 1em;
+    border: .5em solid transparent;
+    border-top-color: grey;
+    position: absolute;
+    right: 1em;
+    bottom: .5em;
+    pointer-events: none;
+}
+.output {
+    width: auto;
+    height: 3rem;
+    padding-block: .2em;
+    border: 1px solid;
+    border-color: transparent transparent grey transparent;
+    font-size: 1.6rem;
+    color: black;
+}
+button {
+    width: 100%;
+    font-size: 20px;
+    padding-block: .8em;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(77, 77, 233);
+    margin-top: .5em;
+}
